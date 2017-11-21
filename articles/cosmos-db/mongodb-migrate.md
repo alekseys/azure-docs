@@ -92,16 +92,14 @@ Example:
         
     c. Run ```db.runCommand({getLastRequestStatistics: 1})``` and you will receive a response like this one:
      
-        ```
-        globaldb:PRIMARY> db.runCommand({getLastRequestStatistics: 1})
+     ```globaldb:PRIMARY> db.runCommand({getLastRequestStatistics: 1})
         {
             "_t": "GetRequestStatisticsResponse",
             "ok": 1,
             "CommandName": "insert",
             "RequestCharge": 10,
             "RequestDurationInMilliSeconds": NumberLong(50)
-        }
-        ```
+        }```
         
     d. Take note of the request charge.
     
